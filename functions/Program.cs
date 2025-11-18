@@ -26,6 +26,10 @@ internal class Program // de function heet program //en we gebruikt de program o
         Vraag6();
         string antwoord = Vraag7();
         Console.WriteLine(antwoord);
+        GetRandomVraag();
+        GetRandomVraag();
+        GetRandomVraag();
+        GetRandomVraag();
         Console.WriteLine("Dat waren alle vragen");
     }
     internal void Vraag1()
@@ -87,5 +91,12 @@ internal class Program // de function heet program //en we gebruikt de program o
         int random = new random();
         return GetVraag(random); 
     }
-    
+    internal void VraagRandom()
+    {
+        string randomVraag = GetRandomVraag();
+        Console.WriteLine(randomVraag);
+
+        string antwoord = Console.ReadLine();
+        Console.WriteLine(antwoord);
+    }
 }
