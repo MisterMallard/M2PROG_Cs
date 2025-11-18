@@ -2,6 +2,11 @@
 
 internal class Program // de function heet program //en we gebruikt de program om de function aan te roepen
 {
+    string[] vragen = new string[]
+    {
+        "What 1197 N64 video game, features James Bond and is named after the 1995 film?",
+        "What arcade game was called Puckman in Japan?"
+    };
     static void Main(string[] args)
     {
         Program program = new Program(); // we hebben een varible van program gemaakt //varible; program
@@ -11,12 +16,16 @@ internal class Program // de function heet program //en we gebruikt de program o
     {
         Console.WriteLine("Dit is nu de start van mijn programma");
         Console.WriteLine("Ik ga nu een paar vraagen stellen");
+        string vraag0 = GetVraag(0);
+        Console.WriteLine(vraag0);
         Vraag1();
         Vraag2();
         Vraag3();
         Vraag4();
         Vraag5();
         Vraag6();
+        string antwoord = Vraag7();
+        Console.WriteLine(antwoord);
         Console.WriteLine("Dat waren alle vragen");
     }
     internal void Vraag1()
@@ -60,6 +69,23 @@ internal class Program // de function heet program //en we gebruikt de program o
         string antwoord = Console.ReadLine();
 
         Console.WriteLine("Elden Ring");
+    }
+    internal string Vraag7()
+    {
+        Console.WriteLine("Welk boek lees je nu?");
+        string antwoord = Console.ReadLine();
+        antwoord = "Wuthering Heights";
+
+        return antwoord;
+    }
+    internal string GetVraag(int vraagIndex)
+    {
+        return vragen[vraagIndex];
+    }
+    internal string GetRandomVraag()
+    {
+        int random = new random();
+        return GetVraag(random); 
     }
     
 }
