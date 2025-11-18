@@ -10,12 +10,13 @@ internal class Program // de function heet program //en we gebruikt de program o
     internal void Run()
     {
         Console.WriteLine("Dit is nu de start van mijn programma");
-        Console.WriteLine("Ik ga nu een vraag stellen");
+        Console.WriteLine("Ik ga nu een paar vraagen stellen");
         Vraag1();
         Vraag2();
         Vraag3();
         Vraag4();
         Vraag5();
+        Vraag6();
         Console.WriteLine("Dat waren alle vragen");
     }
     internal void Vraag1()
@@ -53,4 +54,12 @@ internal class Program // de function heet program //en we gebruikt de program o
 
         Console.WriteLine("Amerika");
     }
+    internal void Vraag6()
+    {
+        Console.WriteLine("Wat is je lievelings game?");
+        string antwoord = Console.ReadLine();
+
+        Console.WriteLine("Elden Ring");
+    }
+    
 }
