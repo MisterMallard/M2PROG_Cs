@@ -1,0 +1,6 @@
+﻿namespace constructors;
+
+class Quiz  
+{
+
+}
